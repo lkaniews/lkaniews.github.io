@@ -14,7 +14,7 @@ tags:
 - programmer
 ---
 Ruby is an Object Orientated Programming Language. But, what does that mean? In object oriented programming, the objects are floats, integers and strings (nouns) and the methods are verbs they are actions or events that happen to objects. In app building the components are the objects (buttons, sounds etc) and the methods are the events that happen to the object. In Object Orientated Programming in Ruby, there are classes and objects. Think of it as a box of penne pasta where the class is the box of penne where the individual pasta meals are “instances of the class of objects known as”  pasta. The pasta is the outcome of the class and can be manipulated many ways depending on what sauce and toppings are added to it such as cheese, butter, tomato sauce, vegetables and meat once the action of cooking the pasta is applied. Here is an example of a class: 
-class Penne
+class Pasta
 	def cook_time=(time)
 		@time = time
 	end
@@ -22,6 +22,17 @@ class Penne
 	def cook_time
 		return @time
 	end 
+
+	def pasta=(type)
+		@type = type
+		type= Array.new
+		type = [“penne”, “spaghetti”, “linguine”, “bowtie”, “macaroni”, “shells” ]
+		return type
+	end
+	
+	def pasta
+		return @type
+	end
 end 
 	The highlighted purple is the class and the purple end is ending the class. And the attributes to penne pasta are in the class. The class is setting up for all of the attributes that can be individualized to create a unique bowl of pasta. You can store variables under the class such as amount, sauce, cook time and more. An object is an instance of some type of class. The object being a string, array, hash or numbers. In classes, we use instance variables. The instance variable is defined the same way for each bowl of penne and is used the same way but the value it holds is unique for each bowl. For example, serving is an instance variable, it can be manipulated for each unique bowl of pasta. Classes are efficient and an instance where they have and can be used is in storing user data for a profile of maybe Facebook or another form of social media. The class would be User and then the instance variables could be manipulated to personalize the profile for each person. Other attributes for a User profile could be email, username, and password. For each attribute, there is a reader and writer method. 
 class User
